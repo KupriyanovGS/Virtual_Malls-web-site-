@@ -1,0 +1,119 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.current{
+    transform: translateY(-5px);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+body {
+    /* задний фон  */
+    /* background: url('vid/Выживалово\ набрал\ SSS\ ранг\ и\ нагнул\ Вергилия\ \(720p\).mp4'); */
+    background-size: cover; /* Растягивает изображение на весь экран */
+    background-position: center; /* Выравнивание по центру */
+    background-repeat: no-repeat; /* Запрещает повторение изображения */
+    background-attachment: fixed;/*закрепляет при пролистовании*/
+}
+/* video block start */
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+.video_media {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.intro {
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.intro::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.479);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+/* video blok end */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.block {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 10%;
+    z-index: 3;
+    text-align: center;
+}
+h1 {
+    font-size: 30px;
+    margin-left: 30px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: bisque;
+}
+h2 {
+    font-size: 70px;
+    color: bisque;
+}
+h3 {
+    font-size: 50px;
+    color: azure;
+}
+p {
+    width: 100%;
+    text-align: center;
+    font-size: large;
+    color: azure;
+
+}
+.btn-dowland {
+    margin: 70px;
+}
+.p-dowland {
+    color: bisque; /* цвет текста */
+    font-size: 40px;
+    border-radius: 5px 5px 5px 5px;
+    text-decoration: none; /* убирать подчёркивание у ссылок */
+    user-select: none; /* убирать выделение текста */
+    background: rgba(0, 0, 0, 0.596); /* фон кнопки */
+    padding: .7em 1.5em; /* отступ от текста */
+    outline: none; /* убирать контур в Mozilla */
+    cursor: pointer;
+  } 
+  .p-dowland:hover { background: rgba(0, 0, 0, 0.315); } /* при наведении курсора мышки */
+  .p-dowland:active { background: rgba(0, 0, 0, 0.404); } /* при нажатии */
+.icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.inline1 {
+    display: inline-block;
+    margin: 10px;
+}
+.inline2 {
+    display: inline-block;
+    margin: 10px;
+}

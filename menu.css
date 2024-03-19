@@ -1,0 +1,52 @@
+/* это меню */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+nav ul {
+    list-style: none;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    
+}
+
+nav ul li {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+nav ul li a {
+    display: block;
+    font-size: 40px;
+    margin-left: 50px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: bisque;
+    
+}
+.main {
+    margin-left: 0px;
+}
+
+nav ul li a:hover {
+    background-color: #ce7438;
+    transform: translateY(-5px);
+}
+nav ul li {
+    box-shadow: 5px -5px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.current{
+    background-color: #ce7438;
+}
+h1 {
+    font-size: 25px;
+    margin-left: 30px;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: bisque;
+}
+/* дальше не меню */
